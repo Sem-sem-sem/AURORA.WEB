@@ -1,0 +1,107 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-color: #000;
+   overflow: hidden;
+   font-family: 'Arial', sans-serif;
+   color: white;
+   cursor: none;
+}
+.logo{
+   width: 10%;
+   margin-left: 45%;
+   pointer-events: auto; 
+   z-index: 1000;
+ }
+ .logo:hover {
+   cursor: pointer;
+ }
+ .frame_shadow{
+   position: fixed;
+   top: 0;
+   left: 0;
+   box-shadow: 0px 0px 50.6px -2px #ff62d2 inset;
+   width: 100vw;
+   height: 100vh;
+}
+
+.photo-container {
+   position: fixed;
+   left: 5%;
+   top: 50%;
+   transform: translateY(-50%);
+   display: flex;
+   flex-direction: column;
+   gap: 5vh; /* расстояние между фото — 15% высоты экрана */
+   z-index: 100;
+}
+
+.collection-text {
+   position: absolute;
+   bottom: 5%;
+  left: 80%;
+   color: white;
+   font-size: 16px;
+   font-family: sans-serif;
+   z-index: 999999;
+   display: none; /* Скрыт по умолчанию */
+ }
+ 
+
+
+
+.photo-item {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.thumbnail {
+   width: 10%;
+   height: auto;
+   object-fit: contain;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+   transform: scale(1.05);
+}
+
+.thumbnail.active {
+   width: 15%;
+   z-index: 200;
+   position: relative;
+}
+
+
+.trail-image {
+   position: fixed;
+   pointer-events: none;
+   transition: all 2s ease-out;
+   z-index: 0; /* чтобы не перекрывать */
+ }
+ 
+ @media screen and (min-width: 1px) and (max-width: 450px) {
+   .thumbnail {
+      width: 30%;
+   }
+
+   .thumbnail:hover {
+      transform: scale(2.05);
+   }
+   .thumbnail.active {
+      width: 33%;
+      z-index: 200;
+      position: relative;
+   }
+   .collection-text {
+      position: absolute;
+      bottom: 5%;
+     left: 70%;
+      color: white;
+      font-size: 9px;
+
+    }
+}
+ 

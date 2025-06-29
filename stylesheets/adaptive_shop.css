@@ -1,0 +1,36 @@
+@media screen and (min-width: 1px) and (max-width: 450px)  {
+    /*  мобилка  - тут по классу своему обращаешься к определенному элементу*/
+        .photo-container1,
+        .photo-container2,
+        .photo-container3,
+        .photo-container4,
+        .photo-container5,
+        .photo-container6,
+        .photo-container7,
+        .photo-container8 {
+          width: 30%; /* почти в 2 раза больше, было 10% */
+          margin-left: 41%; /* центрируем ближе к середине */
+          transform: translateX(-50%); /* выравниваем по центру точнее */
+        }
+      
+        .photo-info {
+          font-size: 60%; /* можно чуть уменьшить для аккуратности */
+        }
+      }
+    
+    @media screen and (min-width: 451px) and (max-width: 768px) {
+    /*    планшет мини */
+    }
+    
+    
+    @media screen and (min-width: 769px) and (max-width:  1366px) {
+    /*  планшет про */
+    }
+    
+    @media screen and (min-width:  1366px) and (max-width: 1440px) {
+    /* маленькие ноуты */
+    }
+    
+    @media screen and (min-width: 1441px) and (max-width: 1920px) {
+    /* desctop */
+    }

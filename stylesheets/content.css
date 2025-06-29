@@ -1,0 +1,167 @@
+body{ 
+   position: relative;
+   overflow: hidden;
+   width: 100vw;
+   height: 100vh;
+   background-color: black;
+}
+
+.frame_shadow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 50.6px -2px #627CFF inset;
+  width: 100vw;
+  height: 100vh;
+}
+.main-nav {
+  display: none; /* РЎРєСЂС‹РІР°РµРј РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ, РїРѕРєР°Р¶РµС‚ РјРµРґРёР°Р·Р°РїСЂРѕСЃ */
+}
+
+.nav-item {
+  color: white;
+  font-family: sans-serif;
+}
+
+.imgcircle1{
+position: absolute;
+margin-left: 20%;
+margin-top: -10%;
+width: 5%;
+height: 5%;
+}
+.imgc1{
+position: absolute;
+}
+
+.imgcircle2{
+position: absolute;
+width: 10%;
+height: 20%;
+margin-left: 30%;
+margin-top: 20%;
+filter: blur(40px);
+opacity: 0.11;
+}
+.imgc2{
+position: absolute;
+}
+
+.imgcircle3{
+position: absolute;
+width: 5%;
+height: 5%;
+margin-left: 10%;
+margin-top: 30%;
+}
+.imgc3{
+position: absolute;
+}
+
+.imgcircle4{
+position: absolute;
+width: 5%;
+height: 5%;
+margin-left: 40%;
+margin-top: -5%;
+opacity: 0.7;
+  }
+.imgc4{
+position: absolute;
+  }
+  
+.imgcircle5{
+position: absolute;
+width: 5%;
+height: 5%;
+margin-left: 60%;
+margin-top: 10%;
+  }
+.imgc5{
+position: absolute;
+      }
+      
+      
+.imgcircle6{
+position: absolute;
+width: 5%;
+height: 5%;
+margin-left: 55%;
+margin-top: 5%;
+          }
+.imgc6{
+position: absolute;
+}
+
+
+.imgcircle7{
+   position: absolute;
+  width: 5%;
+  height: 5%;
+  margin-left: 10%;
+  margin-top: -20%;
+  }
+  .imgc7{
+  position: absolute;
+  }
+
+.imgcircle8{
+   position: absolute;
+  width: 5%;
+  height: 5%;
+  }
+  .imgc8{
+  position: absolute;
+  margin-left: 15%;
+   margin-top: 10%;
+  }
+
+  .layout-wrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 100vh;
+     width: 100vw;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 10;
+     pointer-events: none;
+   }
+   
+   .sidebar {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-left: 40px;
+     pointer-events: auto;
+   }
+   
+   .sidebar .nav-item {
+     color: white;
+     font-size: 1.1rem;
+     margin: 5% 0;
+     cursor: pointer;
+     font-family: sans-serif;
+     transition: color 0.3s ease;
+   }
+   
+   .logo-center {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     pointer-events: auto;
+   }
+   
+   .logo-center img {
+     width: 50%;
+     height: auto;
+   }
+   
+   /* Р¦РІРµС‚ С„РѕРЅР° .frame_shadow РїСЂРё РЅР°РІРµРґРµРЅРёРё */
+   .sidebar .nav-item:hover ~ .frame_shadow,
+   .sidebar .nav-item.hovering ~ .frame_shadow {
+     box-shadow: 0px 0px 50.6px -2px #FF4D4D inset;
+   }
+   
